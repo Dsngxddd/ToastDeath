@@ -1,0 +1,4 @@
+name: toastdeath
+version: '${project.version}'
+main: net.cengiz1.toastdeath.Toastdeath
+api-version: '1.16'

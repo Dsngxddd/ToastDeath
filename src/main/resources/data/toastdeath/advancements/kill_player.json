@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "killed_player": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player"
+        }
+      },
+      "rewards": {
+        "experience": 100
+      }
+    }
+  },
+  "display": {
+    "title": {
+      "text": "Player Slayer",
+      "color": "red"
+    },
+    "description": {
+      "text": "Awarded for killing another player."
+    },
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "requirements": [
+    [
+      "killed_player"
+    ]
+  ],
+  "criteriaVisibility": {
+    "killed_player": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:player"
+        }
+      },
+      "parent": "minecraft:story/root",
+      "visibility": "visible"
+    }
+  },
+  "display": {
+    "title": "Player Slayer",
+    "description": "Öldüren İsmi %s ölen ismi %s",
+    "icon": {
+      "item": "minecraft:diamond_sword"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  }
+}
